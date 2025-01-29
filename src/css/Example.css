@@ -1,0 +1,14 @@
+.example {
+  background-color: #ffe4e1;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.example h1 {
+  font-size: 2.5em;
+}
+
+.example p {
+  font-size: 1.2em;
+}

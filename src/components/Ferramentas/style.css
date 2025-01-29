@@ -1,0 +1,54 @@
+/* Estilo do container principal */
+.cardFerramenta {
+  width: 100%;
+  height: 254px;
+  border-radius: 8px; /* Bordas mais suaves */
+  display: flex;
+  gap: 8px; /* Espaçamento mais consistente */
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+/* Estilo dos itens (p) */
+.cardFerramenta p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px; /* Ajuste nas bordas */
+  transition: all 0.4s ease; /* Transição mais fluida */
+  border: 1px solid #333; /* Bordas mais suaves */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra interna */
+}
+
+/* Efeito de expansão no hover */
+.cardFerramenta p:hover {
+  flex: 4;
+  background: var(--background-color);
+  flex-direction: column;
+}
+
+/* Estilo do texto rotacionado */
+.cardFerramenta p span {
+  min-width: 14em;
+  padding: 0.5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem; /* Tamanho do texto ajustado */
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+/* Efeito no texto ao passar o mouse */
+.cardFerramenta p:hover span {
+  transform: rotate(0);
+  color: #fff; /* Destaque no texto */
+}
+.iconFerramenta{
+  font-size: 40px;
+}

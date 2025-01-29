@@ -1,0 +1,111 @@
+.card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* for all social containers */
+.socialContainer {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 8px;
+    /* Adicionando borda arredondada por padrão */
+}
+
+/* hover styles */
+.containerOne:hover {
+    background-color: #d62976;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+
+.containerTwo:hover {
+    background-color: #001822;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+
+.containerThree:hover {
+    background-color: #0072b1;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+
+.containerFour:hover {
+    background-color: #25d366;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+
+.containerFive:hover {
+    /* Hover para o ícone de e-mail */
+    background-color: #ff5c8d;
+    /* Cor de fundo para o ícone de email */
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+
+/* Active state for all social containers */
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+.socialIcon {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+.socialContainer:hover .socialIcon {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1330px) {
+    .socialContainer {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        gap: 10px;
+    }
+    .socialIcon {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 961px) {
+    .socialContainer {
+        width: 60px;
+        height: 60px;
+    }
+    .card {
+        gap: 15px;
+    }
+    .socialIcon {
+        font-size: 28px;
+    }
+}

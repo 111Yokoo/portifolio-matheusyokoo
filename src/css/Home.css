@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'Varela';
+  src: url('../assets/fonts/VarelaRound-Regular.ttf') format('truetype'); /* ou '.otf' para OTF */
+}
+@font-face {
+  font-family: 'Bebas';
+  src: url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype'); /* ou '.otf' para OTF */
+}
+@font-face {
+  font-family: 'Jersey';
+  src: url('../assets/fonts/Jersey15-Regular.ttf') format('truetype'); /* ou '.otf' para OTF */
+}
+@font-face {
+  font-family: 'Canveat';
+  src: url('../assets/fonts/Caveat-VariableFont_wght.ttf') format('truetype'); /* ou '.otf' para OTF */
+}
+ul{
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  font-family: Bebas;
+}
+h2, h3, h4, h5, h5{
+  font-family: Varela;
+}
+.cvDownloadMobile{
+  display: none;
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;  
+}
+.infoLateral{
+  width: 20%;
+  max-height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.linksLateralBar{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.formacaoLateralBar{
+  padding: 0px 20px;
+}
+.formacaoLateralBar h3{
+  font-family: Bebas;
+  margin: 0;
+  font-size: 24px;
+}
+.formacaoLateralBar p{
+  font-family: Varela;
+  margin: 0;
+  font-size: 22px;
+}
+.infoLateral h2{
+  font-family: Bebas;
+  font-size: 35px;
+}
+.nomeFoto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imageEdit{
+  width: 70%;
+  border-radius: 20px;
+}
+.conteudo{
+  width: 100%;
+  overflow-y: scroll;
+}
+.navbar{
+  width: -webkit-fill-available;
+  height: 70px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.navbar nav ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.navbar .buttonsContext{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  margin-right: 20px;
+}
+.mainConteudo{
+  padding: 70px 0px 0px 0px;
+  width: 100%;
+}
+#home {
+  background-image: var(--background-image);
+  background-color: var(--transparencia); /* Preto com 50% de transparência */
+  background-blend-mode: overlay; /* Combina cor e imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titleHome{
+  font-size: 60px;
+  font-family: Bebas;
+}
+#sobre {
+  height: auto;
+  display: flex; /* Usar flexbox para organizar os elementos horizontalmente */
+  flex-direction: column;
+  gap: 120px;
+  justify-content: space-between; /* Espaço entre os elementos */
+  padding: 25px; /* Espaço interno no contêiner */
+  background: var(--theme-background); /* Cor do fundo baseada no tema */
+}
+#sobre article {
+  flex: 1; /* Os artigos ocupam espaço igual dentro do contêiner */
+}
+#sobre .imageSombra {
+  position: relative; /* Para posicionar a sombra */
+  margin-right: -50px;
+}
+.imageESobre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Espaço entre os elementos */
+  gap: 50px;
+}
+.imageESobre{
+  font-size: 20px
+}
+.sombraImage {
+  position: absolute;
+  top: 20px; /* Ajuste da posição da sombra */
+  left: 20px;
+  width: calc(100% - 100px); /* Ligeiramente menor que o contêiner */
+  height: calc(105%);
+  background-color: rgba(0, 0, 0, 0.3); /* Sombra com transparência */
+  border-radius: 8px; /* Bordas arredondadas */
+  z-index: 0; /* Fica atrás da imagem */
+}
+.imageSobre {
+  position: relative;
+  z-index: 1; /* Fica acima da sombra */
+  max-width: 80%; /* Ajusta o tamanho da imagem */
+  border-radius: 8px;
+}
+.listHistorico{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.listHistorico hr{
+  opacity: .4;
+  height: .8px;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+}
+.historico{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.ferramentas{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.listFerramentas{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-around
+  ;
+}
+#projetos {
+  background-image: var(--background-image);
+  background-color: var(--transparencia); /* Preto com 50% de transparência */
+  background-blend-mode: overlay; /* Combina cor e imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.listProjetos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+}
+@media (max-width: 1500px) {
+  .imageEdit{
+    width: 80%;
+  }
+}
+@media (max-width: 1317px) {
+  .infoLateral h2{
+    text-align: center;
+  }
+}
+@media (max-width: 1220px) {
+  .sombraImage {
+    top: 20px; /* Ajuste da posição da sombra */
+    left: 20px;
+    width: calc(100% - 80px); /* Ligeiramente menor que o contêiner */
+    height: calc(100%);
+  }
+}
+@media (max-width: 1160px) {
+  .imageEdit{
+    width: 90%;
+  }
+  .sombraImage {
+    top: 20px; /* Ajuste da posição da sombra */
+    left: 20px;
+    width: calc(100% - 80px); /* Ligeiramente menor que o contêiner */
+    height: calc(90%);
+  }
+}
+@media (max-width: 1100px) {
+  #sobre .imageSombra {
+    display: none;
+  }
+}
+@media (max-width: 961px) {
+  .home{
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .infoLateral{
+    width: auto;
+  }
+.nomeFoto{
+  display: none;
+}
+.imageEdit{
+  display: none;
+}
+.formacaoLateralBar{
+  display: none;
+}
+.cvDownloadDesktop{
+  display: none;
+}
+.cvDownloadMobile{
+  display: block;
+}
+}

@@ -1,0 +1,136 @@
+/* From Uiverse.io by jvcrz */ 
+.cardProjeto {
+    font-family: "Poppins", sans-serif;
+    width: 562px;
+    height: 289px;
+    border-radius: 8px;
+    background-color: rgba(36, 36, 36, 0.05);
+    padding: 16px 32px 16px 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .cls-1 {
+    fill: #fff;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+  
+  .label {
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 0.8;
+    line-height: 1.4;
+    font-weight: 300;
+  }
+  
+  .ico {
+    position: absolute;
+    bottom: 16px;
+    left: 92px;
+    display: flex;
+    gap: 32px;
+    opacity: 0;
+    transition: left 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .cardProjeto::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-image: linear-gradient(to bottom, #0085d7, #5cc9ff);
+    border-radius: 8px 0 0 8px;
+    transition: width 0.3s ease;
+  }
+  
+  .cardProjeto:hover::before {
+    width: 10px;
+  }
+  
+  .cardProjeto:hover {
+    border-left-width: 10px;
+  }
+  
+  .title,
+  .label {
+    transition: transform 0.3s ease;
+  }
+  
+  .cardProjeto:hover .title,
+  .cardProjeto:hover .label {
+    transform: translateX(20px);
+  }
+  
+  .cardProjeto:hover .ico {
+    left: 52px;
+    opacity: 0.3;
+  }
+  
+  .gradient {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: #ffffff;
+    border-radius: 50%;
+    filter: blur(200px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .cardProjeto:hover .gradient {
+    opacity: 0.04;
+  }
+  .iconProject{
+    font-size: 35px;
+  }
+  @media (max-width: 1600px) {
+    .cardProjeto {
+      width: 400px;
+      height: 320px;
+    }
+  }
+  @media (max-width: 1210px) {
+    .cardProjeto {
+      width: 350px;
+      height: 350px;
+    }
+  }
+  @media (max-width: 1085px) {
+    .cardProjeto {
+      width: 300px;
+      height: 370px;
+    }
+  }
+  @media (max-width: 745px) {
+    .cardProjeto {
+      width: 562px;
+      height: 289px;
+    }
+  }
+  @media (max-width: 526px) {
+    .cardProjeto {
+      width: 562px;
+      height: 320px;
+    }
+  }
+  @media (max-width: 425px) {
+    .cardProjeto {
+      width: 562px;
+      height: 340px;
+    }
+  }
