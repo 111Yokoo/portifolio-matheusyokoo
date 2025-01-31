@@ -16,6 +16,7 @@ export const Colors = {
     hover: hover, 
     borderColor: '#151718',
     backgroundHover: '#fff',
+    backgroundHoverNav: '#e0e0e0',
   },
   dark: {
     text: '#ECEDEE',
@@ -27,5 +28,6 @@ export const Colors = {
     hover: hover, 
     borderColor: '#f3f3f3',
     backgroundHover: '#191919',
+    backgroundHoverNav: '#212121',
   },
 };

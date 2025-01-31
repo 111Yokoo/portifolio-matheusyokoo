@@ -21,6 +21,7 @@ import { FaReact, FaJs, FaCss3Alt } from "react-icons/fa"; // Ícones
 import { SiTypescript } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa"; // Ícone do Node.js
 import { SiTailwindcss } from "react-icons/si"; // Ícone do Tailwind CSS
+import NavBarLateral from "../components/NavBarLateral";
 
 function Home() {
   const { theme, themeColors } = useTheme();
@@ -53,14 +54,14 @@ function Home() {
       </section>
       <section className="conteudo">
         <section style={{ backgroundColor: themeColors.background }} className="navbar">
-          <nav>
+          <nav className="mobileNone">
             <ul>
               <li><a href="#home" style={{ color: themeColors.text }}><ButtonHoverNav targetId={'home'} text={translations[language].home} /></a></li>
               <li><a href="#sobre" style={{ color: themeColors.text }}><ButtonHoverNav targetId={'sobre'} text={translations[language].aboutMe} /></a></li>
               <li><a href="#projetos" style={{ color: themeColors.text }}><ButtonHoverNav targetId={'projetos'} text={translations[language].projects} /></a></li>
             </ul>
           </nav>
-          <div className="buttonsContext">
+          <div className="buttonsContext mobileNone">
             <div>
               <NightDayButton />
             </div>
@@ -68,7 +69,9 @@ function Home() {
               <LanguageButton />
             </div>
           </div>
+          <div className="mobileNavBar"><NavBarLateral/></div>
         </section>
+
         <div className="mainConteudo">
           <section
             id="home"

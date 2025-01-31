@@ -1,0 +1,106 @@
+/* Botão do menu hamburguer */
+.menu-button {
+    display: flex;
+    background: none;
+    border: none;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+    color: white;
+}
+
+.parteCima {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+/* Sidebar lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Começa escondida */
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1001;
+    /* Aumentado para garantir que fique acima do overlay */
+}
+
+/* Quando a sidebar estiver aberta */
+.sidebar.open {
+    left: 0;
+}
+
+/* Overlay para escurecer o fundo quando o menu abrir */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    /* Abaixo da sidebar */
+}
+
+/* Lista de navegação */
+.sidebar ul.navMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar ul.navMobile li {
+    width: 100%;
+    font-family: Varela;
+    font-size: 20px;
+}
+
+.sidebar ul.navMobile a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Efeito hover */
+.sidebar ul.navMobile a:hover {
+    background-color: var(--tint);
+}
+
+/* Estilo para link ativo */
+.sidebar ul.navMobile a.active {
+    background-color: var(--tint);
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Botões no fim da sidebar */
+.buttonsContextMobile {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;justify-content: space-around;
+}

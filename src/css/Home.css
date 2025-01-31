@@ -136,7 +136,6 @@ h2, h3, h4, h5, h5{
 }
 #sobre .imageSombra {
   position: relative; /* Para posicionar a sombra */
-  margin-right: -50px;
 }
 .imageESobre{
   display: flex;
@@ -192,6 +191,9 @@ h2, h3, h4, h5, h5{
   flex-wrap: wrap;
   justify-content: space-around
   ;
+}
+.mobileNavBar{
+  display: none;
 }
 #projetos {
   background-image: var(--background-image);
@@ -268,4 +270,27 @@ h2, h3, h4, h5, h5{
 .cvDownloadMobile{
   display: block;
 }
+}
+@media (max-width: 675px) {
+  .mobileNone{
+    display: none;
+  }
+  .navbar .buttonsContext{
+    display: none;
+  }
+  .mobileNavBar{
+    display: flex;
+  }
+  .navbar{
+    height: 60px;
+  }
+  .mainConteudo{
+    padding: 60px 0px 0px 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .titleHome{
+    font-size: 50px;
+  }
 }

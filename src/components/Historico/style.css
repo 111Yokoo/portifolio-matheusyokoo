@@ -2,3 +2,11 @@
     display: grid;
     grid-template-columns: 3fr 5fr 4fr;
 }
+
+@media (max-width: 420px) {
+    .identacao{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+  }
