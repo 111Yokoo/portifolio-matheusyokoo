@@ -30,7 +30,9 @@ const translations = {
     projetoInterclasseDescription: "React project of a website for a sports event at a school.",
     projetoGoogle: "Google Project",
     projetoGoogleDescription: "Project inspired by the Google page with functional search and implementation of Tailwind.",
-    aboutMeText: "Hello! I'm Matheus Yokoo, Front-end developer. Systems Analysis and Development Technician, I have accumulated two years of practical learning simulating a real development environment. I have experience with React Native and PHP, and I am passionate about creating intuitive and functional interfaces. Additionally, I have developed projects such as a multifunctional calculator, a musical instrument store and a website for sporting events. I always seek to improve my skills and explore new technologies to deliver innovative solutions."
+    aboutMeText: "Hello! I'm Matheus Yokoo, a Front-end developer. I'm a Systems Analysis and Development Technician, and I've accumulated two years of practical learning simulating a real development environment. I have experience with HTML, CSS, JavaScript, MySQL, React, and PHP, and I seek to create intuitive and functional interfaces. In addition, I've developed projects such as a multifunctional calculator, a musical instrument store, a website for sports events, and an MVC architecture mini-framework. I'm always looking to improve my skills and explore new technologies to deliver innovative solutions.",
+    projetoMVC: "MVC Framework",
+    projetoMVCDescription: "Lightweight and modular PHP miniframework based on the MVC (Model-View-Controller) architecture.",
   },
   'pt-br': {
     home: 'Início',
@@ -58,7 +60,9 @@ const translations = {
     projetoInterclasseDescription: "Projeto em react de um site para evento de esportes em uma escola.",
     projetoGoogle: "Projeto Google",
     projetoGoogleDescription: "Projeto inspirado na página do google com pesquisa funcional e implementação do tailwind.",
-    aboutMeText: "Olá! Sou Matheus Yokoo, desenvolvedor Front-end. Técnico em Análise e Desenvolvimento de Sistemas, acumulo dois anos de aprendizado prático simulando um ambiente real de desenvolvimento. Tenho experiência com React Native e PHP, e sou apaixonado por criar interfaces intuitivas e funcionais. Além disso, já desenvolvi projetos como uma calculadora multifuncional, uma loja de instrumentos musicais e um site para eventos esportivos. Sempre busco aprimorar minhas habilidades e explorar novas tecnologias para entregar soluções inovadoras."
+    aboutMeText: "Olá! Sou Matheus Yokoo, desenvolvedor Front-end. Técnico em Análise e Desenvolvimento de Sistemas, acumulo dois anos de aprendizado prático simulando um ambiente real de desenvolvimento. Tenho experiência com HTML, CSS, JavaScript, MySQL, React e PHP, e busco criar interfaces intuitivas e funcionais. Além disso, já desenvolvi projetos como uma calculadora multifuncional, uma loja de instrumentos musicais, um site para eventos esportivos e um miniframework de arquitetura MVC. Sempre busco aprimorar minhas habilidades e explorar novas tecnologias para entregar soluções inovadoras.",
+    projetoMVC: "Framework MVC",
+    projetoMVCDescription: "Miniframework PHP leve e modular baseado na arquitetura MVC (Model-View-Controller).",
   }
 };
 

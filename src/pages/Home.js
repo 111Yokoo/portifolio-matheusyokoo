@@ -21,6 +21,9 @@ import { FaReact, FaJs, FaCss3Alt } from "react-icons/fa"; // Ícones
 import { SiTypescript } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa"; // Ícone do Node.js
 import { SiTailwindcss } from "react-icons/si"; // Ícone do Tailwind CSS
+import { RiPhpLine } from "react-icons/ri";
+import { PiPlantFill } from "react-icons/pi";
+import { FaHtml5 } from "react-icons/fa";
 import NavBarLateral from "../components/NavBarLateral";
 
 function Home() {
@@ -134,6 +137,7 @@ function Home() {
               <CardProjeto title={translations[language].lojaDeInstrumentosMusicais} resumo={translations[language].lojaDeInstrumentosMusicaisDescription} iconOne={<FaReact size={24} color="#61DAFB" />} iconTwo={<FaNodeJs size={24} color="#339933" />} iconTree={<FaCss3Alt size={24} color="#1572B6" />} link={'https://github.com/111Yokoo/projeto-loja-instrumentosMusicais'}/>
               <CardProjeto title={translations[language].projetoInterclasse} resumo={translations[language].projetoInterclasseDescription} iconOne={<FaReact size={24} color="#61DAFB" />} iconTwo={<FaJs size={24} color="#F7DF1E" />} iconTree={<FaCss3Alt size={24} color="#1572B6" />} link={'https://github.com/111Yokoo/projeto-interclasse'}/>
               <CardProjeto title={translations[language].projetoGoogle} resumo={translations[language].projetoGoogleDescription} iconOne={<FaReact size={24} color="#61DAFB" />} iconTwo={<FaJs size={24} color="#F7DF1E" />} iconTree={<SiTailwindcss size={24} color="#38BDF8" />} link={'https://github.com/111Yokoo/google-project'}/>
+              <CardProjeto title={translations[language].projetoMVC} resumo={translations[language].projetoMVCDescription} iconOne={<RiPhpLine  size={24} color="#993399" />} iconTwo={<PiPlantFill size={24} color="#008000" />} iconTree={<FaHtml5 size={24} color="#E44D26" />} link={'https://github.com/111Yokoo/Miniframework-MVC'}/>
             </section>
           </section>
         </div>
