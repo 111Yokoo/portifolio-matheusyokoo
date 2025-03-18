@@ -1,6 +1,7 @@
 import React from "react";
 import { useTheme } from '../../context/ThemeContext';
-import { FaInstagram, FaTwitter, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; // Usando React Icons
+import { FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; // Usando React Icons
+import { FaXmark } from "react-icons/fa6";
 import "./style.css";
 
 function SocialMedia() {
@@ -13,7 +14,7 @@ function SocialMedia() {
             </a>
 
             <a href="https://x.com/MatheusYok98610" target="_blank" className="socialContainer containerTwo">
-                <FaTwitter className="socialIcon" />
+                <FaXmark className="socialIcon" />
             </a>
 
             <a href="https://www.linkedin.com/in/matheus-dozono-yokoo-800519297/" target="_blank" className="socialContainer containerThree">
@@ -24,7 +25,7 @@ function SocialMedia() {
                 <FaWhatsapp className="socialIcon" />
             </a>
 
-            <a href="mailto:matheus.yokoo@gmail.com" target="_blank" className="socialContainer containerFive">
+            <a href="mailto:yokoomatheus@gmail.com" target="_blank" className="socialContainer containerFive">
                 <FaEnvelope className="socialIcon" /> {/* Ícone de e-mail */}
             </a>
         </div>
