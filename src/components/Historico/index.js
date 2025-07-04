@@ -12,7 +12,7 @@ function Historico({data, titleStyle, lugar, resumo}) {
             <div style={{display: 'flex', alignItems: 'center'}}>
                 <h3 style={{ color: themeColors.text }}>{data}</h3>
             </div>
-            <div>
+            <div className="tituloHistorico">
                 <h3 style={{ color: themeColors.text }}>{titleStyle}</h3>
                 <p style={{ color: themeColors.text }}>{lugar}</p>
             </div>

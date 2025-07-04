@@ -116,7 +116,7 @@ function Home() {
                 <h2 style={{ color: themeColors.text }}>{translations[language].myExperience}</h2>
                 <section className="listHistorico">
                   <hr style={{ background: themeColors.text }}/>
-                  <Historico data={'2023-2024'} titleStyle={translations[language].tecnicoEmAnaliseEDesenvolvimentoDeSistemas} lugar={'SENAI'} resumo={translations[language].doisAnosDeAprendizadoPratico} />
+                  <Historico data={'2023-2024'} titleStyle={translations[language].tecnicoEmAnaliseEDesenvolvimentoDeSistemas} lugar={'SENAI'} resumo={translations[language].experienciaOne} />
                   <hr style={{ background: themeColors.text }}/>
                 </section>
               </article>

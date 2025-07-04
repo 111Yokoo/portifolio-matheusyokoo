@@ -9,7 +9,7 @@ function ButtonDownloadCV({ text }) {
     const handleDownload = () => {
         setIsLoading(true); // Exibir o modal de carregamento
         const link = document.createElement("a");
-        link.href = "/Currículo-Matheus-Yokoo-Desenvolvimento-Web-e-Mont_241216_185132.pdf"; // Caminho para o arquivo
+        link.href = "/Currículo-Matheus-Yokoo.pdf"; // Caminho para o arquivo
         link.download = "Currículo-Matheus-Yokoo.pdf"; // Nome sugerido para o arquivo baixado
         link.click();
         
